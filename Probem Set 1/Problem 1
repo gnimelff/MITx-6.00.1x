@@ -1,0 +1,7 @@
+vowels = "aeiou"
+v = 0									#set vowel count to zero
+for c in s:								#iterates through letters in given string s
+    if c in vowels:						#checks if letter is a vowel
+        v += 1							#if letter is a vowel, increase vowel count
+
+print("Number of vowels: " + str(v))	#prints vowel count
