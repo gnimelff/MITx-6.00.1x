@@ -1,7 +1,12 @@
-vowels = "aeiou"
-v = 0									#set vowel count to zero
-for c in s:								#iterates through letters in given string s
-    if c in vowels:						#checks if letter is a vowel
-        v += 1							#if letter is a vowel, increase vowel count
+'''
+Assume s is a string of lower case characters.
+Write a program that counts up the number of vowels contained in the string s.
+'''
 
-print("Number of vowels: " + str(v))	#prints vowel count
+vowels = "aeiou"
+v = 0									
+for c in s:								
+    if c in vowels:						
+        v += 1							
+
+print("Number of vowels: " + str(v))
