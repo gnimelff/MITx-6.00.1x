@@ -10,7 +10,7 @@
 
 
 monthlyinterest = annualInterestRate / 12
-test = (balance // 12) - (balance // 12 % 10)
+test = (balance // 12) - (balance // 12 % 10)   #sets initial payment test to nearest factor of 10 of balance / 12
 original_balance = balance
 
 while True:
