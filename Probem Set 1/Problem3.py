@@ -16,3 +16,23 @@ for i in range(len(s) -1 ):
         first_letter = i + 2 - longest
 
 print("Longest substring in alphabetical order is: " + s[first_letter:(first_letter + longest)])
+
+
+_________________
+
+start = 0
+count = 0
+longestString = s[0]
+testString = ''
+
+for letter in range(len(s) -1):
+  if s[letter + 1] >= s[letter]:
+    count += 1
+    testString = s[start:(start+(count+1))]
+    if len(testString) > len(longestString):
+      longestString = testString
+  else:  
+    count = 0
+    start = (letter + 1)
+
+print('Longest substring in alphabetical order is: ' + longestString)
